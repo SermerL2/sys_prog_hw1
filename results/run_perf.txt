@@ -1,0 +1,119 @@
+=== Row-major ===
+Method: row
+N = 4096
+Time (min of 10) = 0.00375701 s
+Method: row
+N = 4096
+Time (min of 10) = 0.0038713 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00382409 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00382739 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00379914 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00378836 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00375724 s
+Method: row
+N = 4096
+Time (min of 10) = 0.003763 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00378486 s
+Method: row
+N = 4096
+Time (min of 10) = 0.00378277 s
+
+ Performance counter stats for './matrix_l1_norm row 4096' (10 runs):
+
+         423747854      L1-dcache-load-misses:u                                                 ( +-  0.00% )
+       13634345599      instructions:u                                                          ( +-  0.00% )
+        4054214460      cycles:u                                                                ( +-  0.17% )
+
+       0.846157630 +- 0.007201358 seconds time elapsed  ( +-  0.85% )
+
+=== Column-major ===
+Method: col
+N = 4096
+Time (min of 10) = 0.0738906 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0759964 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0764857 s
+Method: col
+N = 4096
+Time (min of 10) = 0.074957 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0744031 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0742113 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0753242 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0748807 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0748022 s
+Method: col
+N = 4096
+Time (min of 10) = 0.0765732 s
+
+ Performance counter stats for './matrix_l1_norm col 4096' (10 runs):
+
+        3390361857      L1-dcache-load-misses:u                                                 ( +-  0.09% )
+       16991446323      instructions:u                                                          ( +-  0.00% )
+       77950487729      cycles:u                                                                ( +-  0.43% )
+
+      15.408048225 +- 0.084203197 seconds time elapsed  ( +-  0.55% )
+
+=== NOOP ===
+Method: nop
+N = 4096
+Time (min of 10) = 5e-10 s
+Method: nop
+N = 4096
+Time (min of 10) = 5e-10 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+Method: nop
+N = 4096
+Time (min of 10) = 5e-10 s
+Method: nop
+N = 4096
+Time (min of 10) = 5e-10 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+Method: nop
+N = 4096
+Time (min of 10) = 1e-09 s
+
+ Performance counter stats for './matrix_l1_norm nop 4096' (10 runs):
+
+           4194921      L1-dcache-load-misses:u                                                 ( +-  0.02% )
+         206833628      instructions:u                                                          ( +-  0.00% )
+          78903789      cycles:u                                                                ( +-  0.84% )
+
+       0.060324672 +- 0.002971469 seconds time elapsed  ( +-  4.93% )
